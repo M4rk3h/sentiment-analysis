@@ -1,5 +1,5 @@
 ---
-title: 'SA: The Song of Achilies'
+title: 'SA: The Song of Achilles'
 author: "Mark Baber"
 date: "`r Sys.Date()`"
 output: html_document
@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-## Using Sentiment Analysis on the book 'The Song of Achilies'.
+## Using Sentiment Analysis on the book 'The Song of Achilles'.
 
 This is a good book.
 
@@ -34,7 +34,7 @@ Next import the Data
 
 ```{r import-data}
 # import the book
-df <- read_csv("~/theSongOfAchilies.txt")
+df <- read_csv("the-song-of-achilles.txt")
 ```
 
 ```{r}
@@ -90,7 +90,7 @@ ggplot(soa, aes(index, sentiment, fill = sentiment)) +
     x = "Index",
     y = "Sentiment",
     title = "Sentiment Analysis | bing",
-    subtitle = "Book: The Song of Achilies"
+    subtitle = "Book: The Song of Achilles"
   )
 # No wonder I cried..
 ```
@@ -133,7 +133,7 @@ bing_and_nrc) %>%
     x = "Index",
     y = "Sentiment",
     title = "Sentiment Analysis",
-    subtitle = "Book: The Song of Achilies"
+    subtitle = "Book: The Song of Achilles"
   )
 ```
 
